@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kids-Zone Learning Website</title>
+
+<style>
+    body{
+        background-color: #0e284a;
+        
+    }
+    body section#namaz text{
+        color: white;
+
+    }
+   #home span{
+    color: aqua;
+   }
+   #home{
+    background-image: url("home.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+   }
+   #home h2{
+    color: deepskyblue;
+   }
+    
+     body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background-color: #fdf6e3;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .poem {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .poem p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+        .poem img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+body {
+    margin: 0;
+    font-family: Comic Sans MS, Arial, sans-serif;
+    background-color: #125db2;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #26409f;
+    color: white;
+    padding: 20px;
+    font-size: 32px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0e284a;
+    padding: 10px;
+}
+
+nav button {
+    background-color: #141a5d;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #14639f;
+}
+
+/* Section */
+section {
+    display: none;
+    padding: 20px;
+}
+
+section.active {
+    display: block;
+}
+
+/* Cards */
+.card {
+    display: inline-block;
+    background-color: rgb(71, 132, 223);
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #3977da;
+    font-size: 22px;
+}
+
+/* Inputs */
+input {
+    font-size: 20px;
+    padding: 5px;
+    width: 80px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c68c2;
+    padding: 10px;
+    font-size: 16px;
+}
+ body {
+            font-family: 'Arial', sans-serif;
+            background-color: #346896;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .step {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #5d6ec4;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .step img {
+            max-width: 100%;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+        .step h2 {
+            color: #1f618d;
+        }
+        .step p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+</style>
+
+<script>
+function showSection(id) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(sec => sec.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+}
+
+function checkAddition() {
+    let a = 3;
+    let b = 2;
+    let ans = document.getElementById("addAns").value;
+    document.getElementById("addResult").innerHTML =
+        (ans == a + b) ? "✅ Correct!" : "❌ Try Again!";
+}
+
+function checkSubtraction() {
+    let a = 5;
+    let b = 2;
+    let ans = document.getElementById("subAns").value;
+    document.getElementById("subResult").innerHTML =
+        (ans == a - b) ? "✅ Correct!" : "❌ Try Again!";
+}
+</script>
+</head>
+
+<body>
+
+<header>🎈 KiddoSmart Learning 🎈</header>
+
+<nav>
+    <button onclick="showSection('home')">HOME</button>
+<button onclick="showSection('namaz')">NAMAZ</button>
+<button onclick="showSection('abc')">CAPITAL ABCD</button>
+<button onclick="showSection('ABCD')">small abcd</button>
+<button onclick="showSection('numbers')">123</button>
+<button onclick="showSection('colors')">Colors</button>
+<button onclick="showSection('animals')">Animals</button>
+<button onclick="showSection('days')">Days</button>
+<button onclick="showSection('months')">Months</button>
+<button onclick="showSection('math')">Math</button>
+<button onclick="showSection('tables')">Tables</button>
+<button onclick="showSection('vegetables')">Vegetables</button>
+<button onclick="showSection('poem')">Poem</button>
+</nav>
+
+<!-- home -->
+ <section id="home" class="active">
+<h2>Welcome Kids 😊</h2>
+<h2><span>Knowledge makes us</span> smart and strong</h2>
+
+
+</section>
+
+<!-- namaz -->
+<section id="namaz" class="active">
+<h2>NAMAZ STEPS😊</h2>
+<div class="step">
+        <h2>1. Niyyah (Intention)</h2>
+        <p>Before starting prayer, make the intention in your heart for the specific Salah you are performing.</p>
+        <img src="niyyah.jpg" alt="Niyyah">
+    </div>
+
+    <div class="step">
+        <h2>2. Takbir (Raise Hands and Say Allahu Akbar)</h2>
+        <p>Raise your hands to your ears and say “Allahu Akbar” to begin the prayer.</p>
+        <img src="takbir.jpg" alt="Takbir">
+    </div>
+
+    <div class="step">
+        <h2>3. Qiyam (Standing & Recitation)</h2>
+        <p>Stand straight and recite Surah Al-Fatiha and another portion of the Quran.</p>
+        <img src="qaim.jpg" alt="Qiyam">
+    </div>
+
+    <div class="step">
+        <h2>4. Ruku (Bowing)</h2>
+        <p>Bend at the waist with hands on knees and say “Subhana Rabbiyal Adheem”.</p>
+        <img src="ruku.jpg" alt="Ruku">
+    </div>
+
+    <div class="step">
+        <h2>5. Sujood (Prostration)</h2>
+        <p>Prostrate on the ground and say “Subhana Rabbiyal A’la”.</p>
+        <img src="sujood.jpg" alt="Sujood">
+    </div>
+
+    <div class="step">
+        <h2>6. Tashahhud (Sitting)</h2>
+        <p>Sit and recite the Tashahhud, sending blessings on the Prophet ﷺ.</p>
+        <img src="tashhud.jpg" alt="Tashahhud">
+    </div>
+
+    <div class="step">
+        <h2>7. Salam (Ending the Prayer)</h2>
+        <p>Turn your head to the right and left, saying “Assalamu Alaikum wa Rahmatullah” to end the prayer.</p>
+        <img src="salam.jpg" alt="Salam">
+    </div>
+</section>
+
+<!-- ABC -->
+<section id="abc">
+<h2>CAPITAL ABCD</h2>
+<div class="card">A – Apple 🍎</div>
+<div class="card">B – Ball ⚽</div>
+<div class="card">C – Cat 🐱</div>
+<div class="card">D – Dog 🐶</div>
+<div class="card">E – Elephant 🐘</div>
+<div class="card">F – Fish 🐟</div>
+<div class="card">G – Giraffe 🦒</div>
+<div class="card">H – House 🏠</div>
+<div class="card">I – Ice Cream 🍦</div>
+<div class="card">J – Juice 🧃</div>
+<div class="card">K – Kite 🪁</div>
+<div class="card">L – Lion 🦁</div>
+<div class="card">M – Monkey 🐒</div>
+<div class="card">N – Nest 🪺</div>
+<div class="card">O – Orange 🍊</div>
+<div class="card">P – Parrot 🦜</div>
+<div class="card">Q – Queen 👑</div>
+<div class="card">R – Rabbit 🐰</div>
+<div class="card">S – Sun ☀️</div>
+<div class="card">T – Tiger 🐯</div>
+<div class="card">U – Umbrella ☂️</div>
+<div class="card">V – Van 🚐</div>
+<div class="card">W – Whale 🐳</div>
+<div class="card">X – Xylophone 🎼</div>
+<div class="card">Y – Yacht ⛵</div>
+<div class="card">Z – Zebra 🦓</div>
+</section>
+
+<section id="ABCD">
+<h2>small abcd</h2>
+<div class="card">a – ant 🐜</div>
+<div class="card">b – bird 🐦</div>
+<div class="card">c – car 🚗</div>
+<div class="card">d – duck 🦆</div>
+<div class="card">e – egg 🥚</div>
+<div class="card">f – frog 🐸</div>
+<div class="card">g – grapes 🍇</div>
+<div class="card">h – hat 🎩</div>
+<div class="card">i – igloo 🧊</div>
+<div class="card">j – jelly 🍮</div>
+<div class="card">k – key 🔑</div>
+<div class="card">l – leaf 🍃</div>
+<div class="card">m – moon 🌙</div>
+<div class="card">n – nose 👃</div>
+<div class="card">o – owl 🦉</div>
+<div class="card">p – panda 🐼</div>
+<div class="card">q – quilt 🧵</div>
+<div class="card">r – rainbow 🌈</div>
+<div class="card">s – star ⭐</div>
+<div class="card">t – train 🚆</div>
+<div class="card">u – unicorn 🦄</div>
+<div class="card">v – violin 🎻</div>
+<div class="card">w – window 🪟</div>
+<div class="card">x – x-ray 🩻</div>
+<div class="card">y – yo-yo 🪀</div>
+<div class="card">z – zoo 🦒</div>
+
+</section>
+
+<!-- Numbers -->
+<section id="numbers">
+<h2>Numbers</h2>
+<div class="card">1 One</div>
+<div class="card">2 Two</div>
+<div class="card">3 Three</div>
+<div class="card">4 Four</div>
+<div class="card">5 Five</div>
+<div class="card">6 Six</div>
+<div class="card">7 Seven</div>
+<div class="card">8 Eight</div>
+<div class="card">9 Nine</div>
+<div class="card">10 Ten</div>
+<div class="card">11 Eleven</div>
+<div class="card">12 Twelve</div>
+<div class="card">13 Thirteen</div>
+<div class="card">14 Fourteen</div>
+<div class="card">15 Fifteen</div>
+<div class="card">16 Sixteen</div>
+<div class="card">17 Seventeen</div>
+<div class="card">18 Eighteen</div>
+<div class="card">19 Nineteen</div>
+<div class="card">20 Twenty</div>
+
+<div class="card">21 Twenty One</div>
+<div class="card">22 Twenty Two</div>
+<div class="card">23 Twenty Three</div>
+<div class="card">24 Twenty Four</div>
+<div class="card">25 Twenty Five</div>
+<div class="card">26 Twenty Six</div>
+<div class="card">27 Twenty Seven</div>
+<div class="card">28 Twenty Eight</div>
+<div class="card">29 Twenty Nine</div>
+<div class="card">30 Thirty</div>
+
+<div class="card">31 Thirty One</div>
+<div class="card">32 Thirty Two</div>
+<div class="card">33 Thirty Three</div>
+<div class="card">34 Thirty Four</div>
+<div class="card">35 Thirty Five</div>
+<div class="card">36 Thirty Six</div>
+<div class="card">37 Thirty Seven</div>
+<div class="card">38 Thirty Eight</div>
+<div class="card">39 Thirty Nine</div>
+<div class="card">40 Forty</div>
+
+<div class="card">41 Forty One</div>
+<div class="card">42 Forty Two</div>
+<div class="card">43 Forty Three</div>
+<div class="card">44 Forty Four</div>
+<div class="card">45 Forty Five</div>
+<div class="card">46 Forty Six</div>
+<div class="card">47 Forty Seven</div>
+<div class="card">48 Forty Eight</div>
+<div class="card">49 Forty Nine</div>
+<div class="card">50 Fifty</div>
+
+<div class="card">51 Fifty One</div>
+<div class="card">52 Fifty Two</div>
+<div class="card">53 Fifty Three</div>
+<div class="card">54 Fifty Four</div>
+<div class="card">55 Fifty Five</div>
+<div class="card">56 Fifty Six</div>
+<div class="card">57 Fifty Seven</div>
+<div class="card">58 Fifty Eight</div>
+<div class="card">59 Fifty Nine</div>
+<div class="card">60 Sixty</div>
+
+<div class="card">61 Sixty One</div>
+<div class="card">62 Sixty Two</div>
+<div class="card">63 Sixty Three</div>
+<div class="card">64 Sixty Four</div>
+<div class="card">65 Sixty Five</div>
+<div class="card">66 Sixty Six</div>
+<div class="card">67 Sixty Seven</div>
+<div class="card">68 Sixty Eight</div>
+<div class="card">69 Sixty Nine</div>
+<div class="card">70 Seventy</div>
+
+<div class="card">71 Seventy One</div>
+<div class="card">72 Seventy Two</div>
+<div class="card">73 Seventy Three</div>
+<div class="card">74 Seventy Four</div>
+<div class="card">75 Seventy Five</div>
+<div class="card">76 Seventy Six</div>
+<div class="card">77 Seventy Seven</div>
+<div class="card">78 Seventy Eight</div>
+<div class="card">79 Seventy Nine</div>
+<div class="card">80 Eighty</div>
+
+<div class="card">81 Eighty One</div>
+<div class="card">82 Eighty Two</div>
+<div class="card">83 Eighty Three</div>
+<div class="card">84 Eighty Four</div>
+<div class="card">85 Eighty Five</div>
+<div class="card">86 Eighty Six</div>
+<div class="card">87 Eighty Seven</div>
+<div class="card">88 Eighty Eight</div>
+<div class="card">89 Eighty Nine</div>
+<div class="card">90 Ninety</div>
+
+<div class="card">91 Ninety One</div>
+<div class="card">92 Ninety Two</div>
+<div class="card">93 Ninety Three</div>
+<div class="card">94 Ninety Four</div>
+<div class="card">95 Ninety Five</div>
+<div class="card">96 Ninety Six</div>
+<div class="card">97 Ninety Seven</div>
+<div class="card">98 Ninety Eight</div>
+<div class="card">99 Ninety Nine</div>
+<div class="card">100 One Hundred</div>
+
+</section>
+
+<!-- Colors -->
+<section id="colors">
+<h2>Basic Colors</h2>
+<div class="card" style="background:yellow">yellow</div>
+<div class="card" style="background:red">red</div>
+<div class="card" style="background:blue">blue</div>
+<div class="card" style="background:green">green</div>
+<div class="card" style="background:orange">orange</div>
+<div class="card" style="background:pink">pink</div>
+<div class="card" style="background:purple">purple</div>
+<div class="card" style="background:brown">brown</div>
+<div class="card" style="background:black; color:white">black</div>
+<div class="card" style="background:white; color:black">white</div>
+<div class="card" style="background:gray">gray</div>
+<div class="card" style="background:cyan">cyan</div>
+<div class="card" style="background:magenta">magenta</div>
+<div class="card" style="background:lime">lime</div>
+<div class="card" style="background:teal">teal</div>
+<div class="card" style="background:navy; color:white">navy</div>
+<div class="card" style="background:maroon; color:white">maroon</div>
+<div class="card" style="background:olive">olive</div>
+<div class="card" style="background:gold">gold</div>
+<div class="card" style="background:silver">silver</div>
+
+</section>
+
+<!-- Animals -->
+<section id="animals">
+<h2>Animals</h2>
+<div class="card">🦁 lion</div>
+<div class="card">🐯 tiger</div>
+<div class="card">🐘 elephant</div>
+<div class="card">🦒 giraffe</div>
+<div class="card">🐼 panda</div>
+<div class="card">🐶 dog</div>
+<div class="card">🐱 cat</div>
+<div class="card">🐰 rabbit</div>
+<div class="card">🦊 fox</div>
+<div class="card">🐻 bear</div>
+<div class="card">🐮 cow</div>
+<div class="card">🐵 monkey</div>
+<div class="card">🦓 zebra</div>
+<div class="card">🐴 horse</div>
+<div class="card">🐷 pig</div>
+<div class="card">🐔 chicken</div>
+<div class="card">🦉 owl</div>
+<div class="card">🐸 frog</div>
+<div class="card">🐢 turtle</div>
+<div class="card">🐬 dolphin</div>
+
+</section>
+
+<!-- Days -->
+<section id="days">
+<h2>Days of the Week</h2>
+<div class="card">Sunday</div>
+<div class="card">Monday</div>
+<div class="card">Tuesday</div>
+<div class="card">Wednesday</div>
+<div class="card">Thursday</div>
+<div class="card">Friday</div>
+<div class="card">Saturday</div>
+</section>
+
+<!-- Months -->
+<section id="months">
+<h2>Months</h2>
+<div class="card">January</div>
+<div class="card">February</div>
+<div class="card">March</div>
+<div class="card">April</div>
+<div class="card">May</div>
+<div class="card">June</div>
+<div class="card">July</div>
+<div class="card">August</div>
+<div class="card">September</div>
+<div class="card">October</div>
+<div class="card">November</div>
+<div class="card">December</div>
+</section>
+
+<!-- Math -->
+<section id="math">
+<h2>Addition</h2>
+<p>3 + 2 = ?</p>
+<input type="number" id="addAns">
+<button onclick="checkAddition()">Check</button>
+<p id="addResult"></p>
+
+<h2>Subtraction</h2>
+<p>5 - 2 = ?</p>
+<input type="number" id="subAns">
+<button onclick="checkSubtraction()">Check</button>
+<p id="subResult"></p>
+</section>
+
+<!-- tables -->
+<section id="tables">
+<h2>Tables</h2>
+<h3>2</h3>
+<div class="card">2 × 1 = 2</div>
+<div class="card">2 × 2 = 4</div>
+<div class="card">2 × 3 = 6</div>
+<div class="card">2 × 4 = 8</div>
+<div class="card">2 × 5 = 10</div>
+<div class="card">2 × 6 = 12</div>
+<div class="card">2 × 7 = 14</div>
+<div class="card">2 × 8 = 16</div>
+<div class="card">2 × 9 = 18</div>
+<div class="card">2 × 10 = 20</div>
+<br><br>
+
+<h3>3</h3>
+<div class="card">3 × 1 = 3</div>
+<div class="card">3 × 2 = 6</div>
+<div class="card">3 × 3 = 9</div>
+<div class="card">3 × 4 = 12</div>
+<div class="card">3 × 5 = 15</div>
+<div class="card">3 × 6 = 18</div>
+<div class="card">3 × 7 = 21</div>
+<div class="card">3 × 8 = 24</div>
+<div class="card">3 × 9 = 27</div>
+<div class="card">3 × 10 = 30</div>
+<br><br>
+
+<h3>4</h3>
+<div class="card">4 × 1 = 4</div>
+<div class="card">4 × 2 = 8</div>
+<div class="card">4 × 3 = 12</div>
+<div class="card">4 × 4 = 16</div>
+<div class="card">4 × 5 = 20</div>
+<div class="card">4 × 6 = 24</div>
+<div class="card">4 × 7 = 28</div>
+<div class="card">4 × 8 = 32</div>
+<div class="card">4 × 9 = 36</div>
+<div class="card">4 × 10 = 40</div>
+<br><br>
+
+<h3>5</h3>
+<div class="card">5 × 1 = 5</div>
+<div class="card">5 × 2 = 10</div>
+<div class="card">5 × 3 = 15</div>
+<div class="card">5 × 4 = 20</div>
+<div class="card">5 × 5 = 25</div>
+<div class="card">5 × 6 = 30</div>
+<div class="card">5 × 7 = 35</div>
+<div class="card">5 × 8 = 40</div>
+<div class="card">5 × 9 = 45</div>
+<div class="card">5 × 10 = 50</div>
+<br><br>
+
+<h3>6</h3>
+<div class="card">6 × 1 = 6</div>
+<div class="card">6 × 2 = 12</div>
+<div class="card">6 × 3 = 18</div>
+<div class="card">6 × 4 = 24</div>
+<div class="card">6 × 5 = 30</div>
+<div class="card">6 × 6 = 36</div>
+<div class="card">6 × 7 = 42</div>
+<div class="card">6 × 8 = 48</div>
+<div class="card">6 × 9 = 54</div>
+<div class="card">6 × 10 = 60</div>
+<br><br>
+
+<h3>7</h3>
+<div class="card">7 × 1 = 7</div>
+<div class="card">7 × 2 = 14</div>
+<div class="card">7 × 3 = 21</div>
+<div class="card">7 × 4 = 28</div>
+<div class="card">7 × 5 = 35</div>
+<div class="card">7 × 6 = 42</div>
+<div class="card">7 × 7 = 49</div>
+<div class="card">7 × 8 = 56</div>
+<div class="card">7 × 9 = 63</div>
+<div class="card">7 × 10 = 70</div>
+<br><br>
+
+<h3>8</h3>
+<div class="card">8 × 1 = 8</div>
+<div class="card">8 × 2 = 16</div>
+<div class="card">8 × 3 = 24</div>
+<div class="card">8 × 4 = 32</div>
+<div class="card">8 × 5 = 40</div>
+<div class="card">8 × 6 = 48</div>
+<div class="card">8 × 7 = 56</div>
+<div class="card">8 × 8 = 64</div>
+<div class="card">8 × 9 = 72</div>
+<div class="card">8 × 10 = 80</div>
+<br><br>
+
+<h3>9</h3>
+<div class="card">9 × 1 = 9</div>
+<div class="card">9 × 2 = 18</div>
+<div class="card">9 × 3 = 27</div>
+<div class="card">9 × 4 = 36</div>
+<div class="card">9 × 5 = 45</div>
+<div class="card">9 × 6 = 54</div>
+<div class="card">9 × 7 = 63</div>
+<div class="card">9 × 8 = 72</div>
+<div class="card">9 × 9 = 81</div>
+<div class="card">9 × 10 = 90</div>
+<br><br>
+
+<h3>10</h3>
+<div class="card">10 × 1 = 10</div>
+<div class="card">10 × 2 = 20</div>
+<div class="card">10 × 3 = 30</div>
+<div class="card">10 × 4 = 40</div>
+<div class="card">10 × 5 = 50</div>
+<div class="card">10 × 6 = 60</div>
+<div class="card">10 × 7 = 70</div>
+<div class="card">10 × 8 = 80</div>
+<div class="card">10 × 9 = 90</div>
+<div class="card">10 × 10 = 100</div>
+
+</section>
+
+
+<!-- vegetables -->
+
+<section id="vegetables">
+<h2>Vegetables</h2>
+<div class="card">🥦 broccoli</div>
+<div class="card">🥕 carrot</div>
+<div class="card">🥬 lettuce</div>
+<div class="card">🌽 corn</div>
+<div class="card">🍆 eggplant</div>
+<div class="card">🥔 potato</div>
+<div class="card">🧄 garlic</div>
+<div class="card">🧅 onion</div>
+<div class="card">🌶️ chili</div>
+<div class="card">🥒 cucumber</div>
+<div class="card">🍅 tomato</div>
+<div class="card">🥗 cabbage</div>
+<div class="card">🥬 spinach</div>
+<div class="card">🥔 sweet potato</div>
+<div class="card">🥕 radish</div>
+
+</section>
+
+<section id="poem">
+    <h2>Poem</h2>
+     <div class="poem">
+        <p>Upon the hills, where sunlight spills,<br>
+        The wind whispers soft, in gentle thrills.<br>
+        The rivers dance and valleys sigh,<br>
+        Beneath the endless azure sky.</p>
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Sunlit hills">
+
+        <p>The forests hum with life unseen,<br>
+        Emerald leaves and mossy green.<br>
+        Creatures stir in shadowed glade,<br>
+        A secret world that time has made.</p>
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Forest">
+
+        <p>Night descends with velvet cloak,<br>
+        Stars ignite, and planets spoke.<br>
+        The moonlight drapes the quiet land,<br>
+        A silver touch from nature's hand.</p>
+        <img src="sunrise.jpg" alt="Night sky">
+        
+        <p>Through every path, through every stream,<br>
+        Life unfolds like a vivid dream.<br>
+        So wander far, yet hold in heart,<br>
+        The beauty that sets worlds apart.</p>
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="River">
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ABC -->
+<section id="abc">
+<h2>ABCs</h2>
+<div class="card">A – Apple 🍎</div>
+<div class="card">B – Ball ⚽</div>
+<div class="card">C – Cat 🐱</div>
+<div class="card">D – Dog 🐶</div>
+</section>
+
+<!-- Numbers -->
+<section id="numbers">
+<h2>Numbers</h2>
+<div class="card">1 One</div>
+<div class="card">2 Two</div>
+<div class="card">3 Three</div>
+<div class="card">4 Four</div>
+<div class="card">5 Five</div>
+</section>
+
+<!-- Colors -->
+<section id="colors">
+<h2>Basic Colors</h2>
+<div class="card" style="background:red;color:white">Red</div>
+<div class="card" style="background:blue;color:white">Blue</div>
+<div class="card" style="background:green;color:white">Green</div>
+<div class="card" style="background:yellow">Yellow</div>
+</section>
+
+<!-- Animals -->
+<section id="animals">
+<h2>Animals</h2>
+<div class="card">🐶 Dog</div>
+<div class="card">🐱 Cat</div>
+<div class="card">🐘 Elephant</div>
+<div class="card">🦁 Lion</div>
+</section>
+
+<!-- Days -->
+<section id="days">
+<h2>Days of the Week</h2>
+<div class="card">Sunday</div>
+<div class="card">Monday</div>
+<div class="card">Tuesday</div>
+<div class="card">Wednesday</div>
+<div class="card">Thursday</div>
+<div class="card">Friday</div>
+<div class="card">Saturday</div>
+</section>
+
+<!-- Months -->
+<section id="months">
+<h2>Months</h2>
+<div class="card">January</div>
+<div class="card">February</div>
+<div class="card">March</div>
+<div class="card">April</div>
+<div class="card">May</div>
+<div class="card">June</div>
+</section>
+
+<!-- Math -->
+<section id="math">
+<h2>Addition</h2>
+<p>3 + 2 = ?</p>
+<input type="number" id="addAns">
+<button onclick="checkAddition()">Check</button>
+<p id="addResult"></p>
+
+<h2>Subtraction</h2>
+<p>5 - 2 = ?</p>
+<input type="number" id="subAns">
+<button onclick="checkSubtraction()">Check</button>
+<p id="subResult"></p>
+</section>
+
+<footer>
+© Kids-Zone Project | Aptech eProject
+</footer>
+
+</body>
+</html>
